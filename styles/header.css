@@ -1,0 +1,30 @@
+header {
+  width: 80%;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3.125rem;
+}
+
+header button {
+  width: 13.75rem;
+  height: 100%;
+  border: none;
+  border-radius: .375rem;
+  background-color: white;
+  border: 1px solid #172339;
+  color: #172339;
+  font-size: 1rem;
+  letter-spacing: -0.01rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=header.css.map */

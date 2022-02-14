@@ -1,0 +1,67 @@
+@import "../styles/variables.scss";
+
+.mainSection {
+    width: 80%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4.1875rem;
+    background: url(../assets/image-hero-portrait.png);
+    background-position: 63%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    
+    .textPart {
+        width: 60%;
+    
+        h1 {
+            @include headingXL;
+            color: $darkBlue;
+            margin-top: 0;
+            padding-top: 6.25rem;
+            margin-bottom: 2.5rem;
+        }
+    
+        .regular {
+            font-weight: normal;   
+        }
+    
+        p {
+            width: 21.875rem;
+            @include body;
+            color: $grey;
+            margin-bottom: 3.125rem;
+        }
+    
+        button {
+            width: 16rem;
+            height: 3.8125rem;
+            border: none;
+            border-radius: .375rem;
+            @include buttonPrimary;
+        }
+    
+    }
+
+    
+    aside {
+        margin-top: 6.25rem;
+        margin-right: 5rem;
+        float: right;
+
+        h2 {
+            @include headingL;
+            color: $darkBlue;
+            margin: 0;
+        }
+
+        p {
+            @include headingS;
+            font-weight: lighter;
+            color: $grey;
+            margin-top: 0;
+            margin-bottom: 3.75rem;
+        }
+    }
+}

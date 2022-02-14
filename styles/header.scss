@@ -1,0 +1,20 @@
+@import "../styles/variables.scss";
+
+header {
+    width: 80%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3.125rem;
+
+    button {
+        width: 13.75rem;
+        height: 100%;
+        border: none;
+        border-radius: .375rem;
+        @include buttonSecondary;
+    }
+}

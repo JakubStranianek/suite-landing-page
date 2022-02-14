@@ -1,0 +1,40 @@
+@import "../styles/variables.scss";
+
+.secondSection {
+   margin-top: 9.6875rem;
+   width: 100%;
+   height: 100vh;
+   border: 2px solid red;
+   display: flex;
+    justify-content: center;
+
+   .firstPart {
+       margin-top: 2.8125rem;
+       width: 80%;
+       background-color: $darkBlue;
+       height: 34.0625rem;
+       border-radius: .9375rem;
+       display: flex;
+       justify-content: space-evenly;
+
+       .bgJeremy {
+           background: url(/assets/pattern-blur.svg);
+           background-repeat: no-repeat;
+           background-size: contain;
+           background-position: center;
+           width: 40%;
+           position: relative;
+
+           img {
+             width: 22.4881rem;
+             height: 36.8475rem;
+             position: absolute;
+             bottom: 0;
+           }
+       }
+
+       .asideContent {
+          width: 40%;
+       }
+   }
+}

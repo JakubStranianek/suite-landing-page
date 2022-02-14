@@ -1,0 +1,80 @@
+.mainSection {
+  width: 80%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.1875rem;
+  background: url(../assets/image-hero-portrait.png);
+  background-position: 63%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainSection .textPart {
+  width: 60%;
+}
+
+.mainSection .textPart h1 {
+  font-size: 4.5rem;
+  line-height: 4.875rem;
+  letter-spacing: 0.0625rem;
+  color: #172339;
+  margin-top: 0;
+  padding-top: 6.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.mainSection .textPart .regular {
+  font-weight: normal;
+}
+
+.mainSection .textPart p {
+  width: 21.875rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: 0;
+  color: #49566D;
+  margin-bottom: 3.125rem;
+}
+
+.mainSection .textPart button {
+  width: 16rem;
+  height: 3.8125rem;
+  border: none;
+  border-radius: .375rem;
+  background-color: #172339;
+  color: #FAF8F6;
+  font-size: 1rem;
+  letter-spacing: -0.01rem;
+  font-weight: bold;
+}
+
+.mainSection aside {
+  margin-top: 6.25rem;
+  margin-right: 5rem;
+  float: right;
+}
+
+.mainSection aside h2 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.0313rem;
+  color: #172339;
+  margin: 0;
+}
+
+.mainSection aside p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: .1563rem;
+  font-weight: lighter;
+  color: #49566D;
+  margin-top: 0;
+  margin-bottom: 3.75rem;
+}
+/*# sourceMappingURL=mainSection.css.map */

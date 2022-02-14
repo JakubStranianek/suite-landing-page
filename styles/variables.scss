@@ -1,0 +1,81 @@
+//colors
+
+$darkBlue: #172339; 
+$grey: #49566D; 
+$cream: #F3EDE7; 
+$creamWhite: #FAF8F6; 
+$purple: #A060FF; 
+$pink: #CB30E3; 
+$orange: #FFA84E; 
+
+//typography
+
+@mixin buttonPrimary {
+    background-color: $darkBlue;
+    color: $creamWhite;
+    font-size: 1rem;
+    letter-spacing: -0.01rem;
+    font-weight: bold;
+}
+
+@mixin buttonSecondary {
+    background-color: white;
+    border: 1px solid $darkBlue;
+    color: $darkBlue;
+    font-size: 1rem;
+    letter-spacing: -0.01rem;
+    font-weight: bold;
+}
+
+@mixin buttonPrimaryHover {
+    background-color: linear-gradiend($purple, $pink, $orange);
+    color: $creamWhite;
+
+}
+
+@mixin buttonSecondaryHover {
+    background-color: $darkBlue;
+    color: $creamWhite;
+}
+
+@mixin headingXL {
+    font-size: 4.5rem;
+    line-height: 4.875rem;
+    letter-spacing: 0.0625rem;
+}
+
+@mixin headingL {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.0313rem;
+}
+
+@mixin headingM {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: 0.0125rem;
+}
+
+@mixin headingS {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: .1563rem;
+}
+
+@mixin quote {
+    font-size: 1.25rem;
+    line-height: 2.1875rem;
+    letter-spacing: 0;
+}
+
+@mixin body {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: 0;
+}
+
+@mixin footer {
+    font-size: .9375rem;
+    line-height: 2rem;
+    letter-spacing: 0;
+}
