@@ -107,6 +107,10 @@ header button:hover {
   color: #FAF8F6;
 }
 
+.mainSection img {
+  display: none;
+}
+
 .mainSection aside {
   margin-top: 6.25rem;
   margin-right: 5rem;
@@ -166,12 +170,24 @@ header button:hover {
 @media (max-width: 860px) {
   .mainSection {
     width: 90%;
-    background: url("/assets/image-hero-landscape.png");
-    background-repeat: no-repeat;
-    background-position: bottom left;
+    background: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mainSection .textPart {
     width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
   }
   .mainSection .textPart h1 {
     font-size: 38px;
@@ -179,16 +195,34 @@ header button:hover {
     letter-spacing: -0.53px;
     padding-top: 0;
   }
+  .mainSection img {
+    display: block;
+    width: 23.125rem;
+    height: 16.25rem;
+    margin-top: 1.25rem;
+  }
   .mainSection aside {
     width: 90%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 19.375rem;
+    margin-top: 3.375rem;
   }
   .mainSection aside p {
     padding-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .mainSection {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .mainSection .textPart {
+    display: block;
+    text-align: left;
   }
 }
 
@@ -401,6 +435,31 @@ footer .flexContent .socialSites > img:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 9.375rem;
+  }
+}
+
+@media (max-height: 1080px) and (max-width: 860px) {
+  footer {
+    height: 60vh;
+  }
+}
+
+@media (max-height: 1080px) {
+  footer {
+    margin-top: 0;
+    height: 72vh;
+  }
+}
+
+@media (max-height: 800px) {
+  footer {
+    height: 80vh;
+  }
+}
+
+@media (max-height: 680px) {
+  footer {
+    height: 100vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

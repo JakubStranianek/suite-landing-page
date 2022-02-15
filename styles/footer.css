@@ -64,4 +64,29 @@ footer .flexContent .socialSites > img:hover {
     height: 9.375rem;
   }
 }
+
+@media (max-height: 1080px) and (max-width: 860px) {
+  footer {
+    height: 60vh;
+  }
+}
+
+@media (max-height: 1080px) {
+  footer {
+    margin-top: 0;
+    height: 72vh;
+  }
+}
+
+@media (max-height: 800px) {
+  footer {
+    height: 80vh;
+  }
+}
+
+@media (max-height: 680px) {
+  footer {
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=footer.css.map */
