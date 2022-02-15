@@ -17,4 +17,14 @@ header {
         border-radius: .375rem;
         @include buttonSecondary;
     }
+
+    button:hover {
+        @include buttonSecondaryHover;
+    }
+}
+
+@media (max-width: 860px) {
+    header {
+        width: 90%;
+    }
 }

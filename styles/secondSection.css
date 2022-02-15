@@ -1,8 +1,7 @@
 .secondSection {
   margin-top: 9.6875rem;
   width: 100%;
-  height: 100vh;
-  border: 2px solid red;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +33,8 @@
   position: relative;
 }
 
-.secondSection .firstPart .bgJeremy img {
+.secondSection .firstPart .bgJeremy .imgJeremy {
+  content: url("/assets/image-jeremy-large.png");
   width: 22.4881rem;
   height: 36.8475rem;
   position: absolute;
@@ -43,5 +43,103 @@
 
 .secondSection .firstPart .asideContent {
   width: 40%;
+  color: white;
+}
+
+.secondSection .firstPart .asideContent .regular {
+  font-weight: normal;
+}
+
+.secondSection .firstPart .asideContent h3 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.0313rem;
+  margin-top: 5.625rem;
+}
+
+.secondSection .firstPart .asideContent p {
+  font-size: 1.25rem;
+  line-height: 2.1875rem;
+  letter-spacing: 0;
+  color: #F3EDE7;
+}
+
+.secondSection .firstPart .asideContent h6 {
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: 0.0125rem;
+}
+
+.secondSection .firstPart .asideContent figcaption {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: .1563rem;
+}
+
+@media (max-width: 1180px) {
+  .secondSection {
+    margin-top: 20.688rem;
+  }
+  .secondSection .firstPart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 41rem;
+    padding-bottom: 30px;
+  }
+  .secondSection .firstPart .bgJeremy {
+    background-position: center;
+    width: 14.375rem;
+    height: 40%;
+    position: relative;
+    bottom: 0;
+  }
+  .secondSection .firstPart .bgJeremy .imgJeremy {
+    position: 0;
+    bottom: 0;
+    width: 15.75rem;
+    height: 25rem;
+    content: url("../assets/image-jeremy-small.png");
+  }
+  .secondSection .firstPart .asideContent {
+    text-align: center;
+    font-size: 40px;
+    width: 85%;
+    height: 60%;
+  }
+  .secondSection .firstPart .asideContent h3 {
+    margin-top: 3rem;
+  }
+  .secondSection .firstPart .asideContent p {
+    font-size: 18px;
+    letter-spacing: .1875rem;
+  }
+  .secondSection .firstPart .asideContent h6 {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .secondSection {
+    margin-top: 30.688rem;
+  }
+  .secondSection .firstPart {
+    padding-bottom: 3.75rem;
+    width: 90%;
+  }
+  .secondSection .firstPart .asideContent h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.0262rem;
+  }
+  .secondSection .firstPart .asideContent p {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: .0056rem;
+  }
 }
 /*# sourceMappingURL=secondSection.css.map */

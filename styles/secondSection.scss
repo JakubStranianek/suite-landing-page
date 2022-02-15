@@ -3,8 +3,7 @@
 .secondSection {
    margin-top: 9.6875rem;
    width: 100%;
-   height: 100vh;
-   border: 2px solid red;
+   height: 50vh;
    display: flex;
     justify-content: center;
 
@@ -25,7 +24,8 @@
            width: 40%;
            position: relative;
 
-           img {
+           .imgJeremy {
+            content:url("/assets/image-jeremy-large.png");
              width: 22.4881rem;
              height: 36.8475rem;
              position: absolute;
@@ -35,6 +35,102 @@
 
        .asideContent {
           width: 40%;
+          color: white;
+
+          .regular {
+            font-weight: normal;
+           }
+
+          h3 {
+              @include headingL;
+               margin-top: 5.625rem;
+          }
+
+          p {
+              @include quote;
+              color: $cream;
+          }
+
+          h6 {
+            @include headingM;
+          }
+
+          figcaption {
+            @include headingS;
+          }
        }
    }
+}
+
+@media (max-width: 1180px) {
+  .secondSection {
+    margin-top: 20.688rem;
+
+    .firstPart {
+      flex-direction: column;
+      align-items: center;
+      height: 41rem;
+      padding-bottom: 30px;
+
+      .bgJeremy {
+        background-position: center;
+        width: 14.375rem;
+        height: 40%;
+        position: relative;
+        bottom: 0;
+
+        .imgJeremy {
+          position: abs($number: 0);
+          bottom: 0;
+          width: 15.75rem;
+          height: 25rem;
+          content:url("../assets/image-jeremy-small.png");
+        }
+      }
+
+      .asideContent {
+        text-align: center;
+        font-size: 40px;
+        width: 85%;
+        height: 60%;
+    
+        h3 {
+          margin-top: 3rem;
+        }
+
+        p {
+          font-size: 18px;
+          letter-spacing: .1875rem;
+        }
+
+        h6 { 
+          margin-bottom: 0;
+        }
+      }
+
+    }  
+  }
+}
+
+@media (max-width: 860px) { 
+  .secondSection {
+    margin-top: 30.688rem;
+
+    .firstPart {
+      padding-bottom: 3.75rem;
+      width: 90%;
+    }
+
+    .firstPart .asideContent h3 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      letter-spacing: -0.0262rem;
+    }
+
+    .firstPart .asideContent p {
+      font-size: 1.125rem;
+      line-height: 2rem;
+      letter-spacing: .0056rem;
+    }
+  }
 }

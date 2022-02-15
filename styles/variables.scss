@@ -28,7 +28,7 @@ $orange: #FFA84E;
 }
 
 @mixin buttonPrimaryHover {
-    background-color: linear-gradiend($purple, $pink, $orange);
+    background: linear-gradient(140deg, $purple 0%, $pink 50%, $orange 100%);
     color: $creamWhite;
 
 }

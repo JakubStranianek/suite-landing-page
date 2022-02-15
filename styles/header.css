@@ -27,4 +27,15 @@ header button {
   letter-spacing: -0.01rem;
   font-weight: bold;
 }
+
+header button:hover {
+  background-color: #172339;
+  color: #FAF8F6;
+}
+
+@media (max-width: 860px) {
+  header {
+    width: 90%;
+  }
+}
 /*# sourceMappingURL=header.css.map */

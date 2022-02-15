@@ -34,6 +34,17 @@ header button {
   font-weight: bold;
 }
 
+header button:hover {
+  background-color: #172339;
+  color: #FAF8F6;
+}
+
+@media (max-width: 860px) {
+  header {
+    width: 90%;
+  }
+}
+
 .mainSection {
   width: 80%;
   height: 600px;
@@ -52,10 +63,11 @@ header button {
 }
 
 .mainSection .textPart {
-  width: 60%;
+  width: 100%;
 }
 
 .mainSection .textPart h1 {
+  width: 95%;
   font-size: 4.5rem;
   line-height: 4.875rem;
   letter-spacing: 0.0625rem;
@@ -90,6 +102,11 @@ header button {
   font-weight: bold;
 }
 
+.mainSection .textPart button:hover {
+  background: linear-gradient(140deg, #A060FF 0%, #CB30E3 50%, #FFA84E 100%);
+  color: #FAF8F6;
+}
+
 .mainSection aside {
   margin-top: 6.25rem;
   margin-right: 5rem;
@@ -112,13 +129,73 @@ header button {
   color: #49566D;
   margin-top: 0;
   margin-bottom: 3.75rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1180px) {
+  .mainSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: right;
+  }
+  .mainSection aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10.25rem;
+    margin-right: 0;
+  }
+  .mainSection aside h1 {
+    width: 100%;
+    font-size: 3.5rem;
+    letter-spacing: -0.0488rem;
+  }
+  .mainSection aside p {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .mainSection {
+    width: 90%;
+    background: url("/assets/image-hero-landscape.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+  .mainSection .textPart {
+    width: 90%;
+  }
+  .mainSection .textPart h1 {
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: -0.53px;
+    padding-top: 0;
+  }
+  .mainSection aside {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 19.375rem;
+  }
+  .mainSection aside p {
+    padding-bottom: 1.25rem;
+  }
 }
 
 .secondSection {
   margin-top: 9.6875rem;
   width: 100%;
-  height: 100vh;
-  border: 2px solid red;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +227,8 @@ header button {
   position: relative;
 }
 
-.secondSection .firstPart .bgJeremy img {
+.secondSection .firstPart .bgJeremy .imgJeremy {
+  content: url("/assets/image-jeremy-large.png");
   width: 22.4881rem;
   height: 36.8475rem;
   position: absolute;
@@ -159,5 +237,170 @@ header button {
 
 .secondSection .firstPart .asideContent {
   width: 40%;
+  color: white;
+}
+
+.secondSection .firstPart .asideContent .regular {
+  font-weight: normal;
+}
+
+.secondSection .firstPart .asideContent h3 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.0313rem;
+  margin-top: 5.625rem;
+}
+
+.secondSection .firstPart .asideContent p {
+  font-size: 1.25rem;
+  line-height: 2.1875rem;
+  letter-spacing: 0;
+  color: #F3EDE7;
+}
+
+.secondSection .firstPart .asideContent h6 {
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: 0.0125rem;
+}
+
+.secondSection .firstPart .asideContent figcaption {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: .1563rem;
+}
+
+@media (max-width: 1180px) {
+  .secondSection {
+    margin-top: 20.688rem;
+  }
+  .secondSection .firstPart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 41rem;
+    padding-bottom: 30px;
+  }
+  .secondSection .firstPart .bgJeremy {
+    background-position: center;
+    width: 14.375rem;
+    height: 40%;
+    position: relative;
+    bottom: 0;
+  }
+  .secondSection .firstPart .bgJeremy .imgJeremy {
+    position: 0;
+    bottom: 0;
+    width: 15.75rem;
+    height: 25rem;
+    content: url("../assets/image-jeremy-small.png");
+  }
+  .secondSection .firstPart .asideContent {
+    text-align: center;
+    font-size: 40px;
+    width: 85%;
+    height: 60%;
+  }
+  .secondSection .firstPart .asideContent h3 {
+    margin-top: 3rem;
+  }
+  .secondSection .firstPart .asideContent p {
+    font-size: 18px;
+    letter-spacing: .1875rem;
+  }
+  .secondSection .firstPart .asideContent h6 {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .secondSection {
+    margin-top: 30.688rem;
+  }
+  .secondSection .firstPart {
+    padding-bottom: 3.75rem;
+    width: 90%;
+  }
+  .secondSection .firstPart .asideContent h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.0262rem;
+  }
+  .secondSection .firstPart .asideContent p {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: .0056rem;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 60vh;
+  background-color: #F3EDE7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+footer .flexContent {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2.5rem;
+}
+
+footer .flexContent .socialSites > img {
+  padding-right: 1.25rem;
+}
+
+footer .flexContent .socialSites > img:last-child {
+  padding-right: 0;
+}
+
+footer .flexContent .socialSites > img:hover {
+  opacity: 50%;
+}
+
+@media (max-width: 1180px) {
+  footer {
+    margin-top: 6.25rem;
+  }
+}
+
+@media (max-width: 860px) {
+  footer {
+    margin-top: 13.25rem;
+  }
+  footer .flexContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 9.375rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
